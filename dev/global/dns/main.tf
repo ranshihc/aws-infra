@@ -4,6 +4,11 @@ provider "aws" {
   region     = "ap-northeast-1"
 }
 
+module "dns" {
+  source  = "app.terraform.io/ranmax0215/dns/aws"
+  version = "1.0.0"
+  dns = var.dns
+}
 ###### you need to get VPC ID data from VPC workspace and use it to create DNS resources ####
 
 // HINT:
