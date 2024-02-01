@@ -4,9 +4,8 @@ provider "aws" {
   region     = "ap-northeast-1"
 }
 
-module "terraform-aws-vpc" {
-  #source      = "app.terraform.io/jurassic-park/vpc/aws"
-  #source      = "terraform-aws-vpc"
+module "vpc" {
+  source  = "app.terraform.io/ranmax0215/vpc/aws"
   version     = "1.0.0"
   vpc_configs = var.vpc_configs
 }
