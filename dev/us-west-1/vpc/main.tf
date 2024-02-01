@@ -6,6 +6,6 @@ provider "aws" {
 
 module "vpc" {
   source  = "app.terraform.io/ranmax0215/vpc/aws"
-  version     = "default"
+  version     = "1.0.0"
   vpc_configs = var.vpc_configs
 }
