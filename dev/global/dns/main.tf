@@ -6,7 +6,7 @@ provider "aws" {
 
 module "dns" {
   source  = "app.terraform.io/ranmax0215/dns/aws"
-  version = "1.0.0"
+  version = "1.0.1"
   dns_entry = var.dns_entry
 }
 ###### you need to get VPC ID data from VPC workspace and use it to create DNS resources ####
