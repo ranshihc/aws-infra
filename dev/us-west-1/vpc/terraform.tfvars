@@ -1,6 +1,6 @@
 vpc_configs = [
     {
-        name = "vpc-dev",
+        name = "ran-vpc-dev",
         cidr = "10.5.0.0/16",
 
         azs             = ["us-west-1a", "us-west-1c"],
