@@ -4,12 +4,12 @@ provider "aws" {
   region     = "ap-northeast-1"
 }
 
-#data "aws_vpcs" "vpc_info" {
-#  tags = {
-#    env = "dev"
-#    bu  = "ran"
-#  }
-#}
+data "aws_vpcs" "vpc_info" {
+  tags = {
+    env = "dev"
+    bu  = "ran"
+  }
+}
 
 module "dns" {
   source  = "app.terraform.io/ranmax0215/dns/aws"
