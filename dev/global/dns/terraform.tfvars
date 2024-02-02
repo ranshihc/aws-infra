@@ -33,7 +33,7 @@ dns_entry = [
     {
         zone_name = "winur8888.dev"
         private_zone = true
-       # vpc = ["auto-assigned"] // you don't need to assign value here. it shoudl be automatically derived from VPC workspace
+        vpc = ["auto-assigned"] // you don't need to assign value here. it shoudl be automatically derived from VPC workspace
 
         tags = {
             env = "development"
