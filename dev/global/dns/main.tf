@@ -13,7 +13,7 @@ provider "aws" {
 
 module "dns" {
   source  = "app.terraform.io/ranmax0215/dns/aws"
-  version = "1.0.4"
+  version = "1.0.5"
   dns_entry = var.dns_entry
   #vpc_id = module.vpc.vpc_id
 }
